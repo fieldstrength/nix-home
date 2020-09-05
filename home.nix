@@ -1,0 +1,70 @@
+{ config, pkgs, ... }:
+
+{
+  # Let Home Manager install and manage itself.
+  programs.home-manager.enable = true;
+
+  # Home Manager needs a bit of information about you and the
+  # paths it should manage.
+  home.username = "cliff";
+  home.homeDirectory = "/Users/cliff";
+
+  # This value determines the Home Manager release that your
+  # configuration is compatible with. This helps avoid breakage
+  # when a new Home Manager release introduces backwards
+  # incompatible changes.
+  #
+  # You can update Home Manager without changing this value. See
+  # the Home Manager release notes for a list of state version
+  # changes in each release.
+  home.stateVersion = "20.09";
+
+  home.packages = [
+    pkgs.jq
+    pkgs.tree
+    pkgs.ripgrep
+    (let neuronRev = "30c72026e094f22dba96af64b123cfc265141411";
+         neuronSrc = builtins.fetchTarball "https://github.com/srid/neuron/archive/${neuronRev}.tar.gz";
+    in import neuronSrc {})
+  ];
+
+  programs.git = {
+      enable = true;
+      userEmail = "cs.hbar@gmail.com";
+  };
+
+  programs.tmux = {
+    enable = true;
+    shortcut = "a";
+  };
+
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+    extraConfig = ''
+      colorscheme gruvbox
+      let g:airline_powerline_fonts = 1
+
+      let g:netrw_liststyle=3
+
+      set number
+      set relativenumber
+
+      " Delete trailing whitespace on save
+      autocmd BufWritePre * :%s/\s\+$//e
+    '';
+    plugins = with pkgs.vimPlugins; [
+      gruvbox
+      zenburn
+
+      vim-airline
+      vim-airline-themes
+
+      vim-nix
+      haskell-vim
+      vim-markdown
+      idris-vim
+    ];
+  };
+
+}
