@@ -61,6 +61,7 @@
       vim-airline
       vim-airline-themes
 
+      neuron-vim
       vim-nix
       haskell-vim
       vim-markdown
