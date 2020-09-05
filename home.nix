@@ -20,6 +20,7 @@
   home.stateVersion = "20.09";
 
   home.packages = [
+    pkgs.fzf
     pkgs.jq
     pkgs.tree
     pkgs.ripgrep
