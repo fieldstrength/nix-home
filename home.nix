@@ -21,6 +21,7 @@
 
   home.packages = [
     pkgs.fzf
+    pkgs.zathura
     pkgs.jq
     pkgs.tree
     pkgs.ripgrep
@@ -53,6 +54,21 @@
 
       " Delete trailing whitespace on save
       autocmd BufWritePre * :%s/\s\+$//e
+
+      """"""""""""" latex config """""""""""""
+      let g:tex_flavor='latex'
+      let g:vimtex_view_method='zathura'
+      let g:vimtex_quickfix_mode=1
+      set conceallevel=2
+      let g:tex_conceal='abdmg'
+
+      """"""""""""" Snippets """""""""""""
+      let g:UltiSnipsExpandTrigger = '<tab>'
+      let g:UltiSnipsJumpForwardTrigger = '<tab>'
+      let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+      let g:UltiSnipsSnippetDirectories=["mathSnippets"]
+
     '';
     plugins = with pkgs.vimPlugins; [
       gruvbox
@@ -61,7 +77,10 @@
       vim-airline
       vim-airline-themes
 
+      ultisnips
+
       neuron-vim
+      vimtex
       vim-nix
       haskell-vim
       vim-markdown
