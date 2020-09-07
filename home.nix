@@ -78,6 +78,7 @@
       vim-airline-themes
 
       ultisnips
+      nerdtree
 
       neuron-vim
       vimtex
