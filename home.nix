@@ -44,8 +44,11 @@
     enable = true;
     vimAlias = true;
     extraConfig = ''
-      colorscheme gruvbox
+      " set background=light
+      colorscheme PaperColor
+
       let g:airline_powerline_fonts = 1
+      let g:airline_theme = 'papercolor'
 
       let g:netrw_liststyle=3
 
@@ -73,6 +76,7 @@
     plugins = with pkgs.vimPlugins; [
       gruvbox
       zenburn
+      papercolor-theme
 
       vim-airline
       vim-airline-themes
