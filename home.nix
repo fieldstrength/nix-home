@@ -67,7 +67,7 @@
       let g:UltiSnipsJumpForwardTrigger = '<tab>'
       let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
-      let g:UltiSnipsSnippetDirectories=["mathSnippets"]
+      let g:UltiSnipsSnippetDirectories=['~/.config/snips']
 
     '';
     plugins = with pkgs.vimPlugins; [
@@ -80,6 +80,7 @@
       ultisnips
       nerdtree
 
+      coc-nvim
       neuron-vim
       vimtex
       vim-nix
@@ -87,6 +88,41 @@
       vim-markdown
       idris-vim
     ];
+  };
+
+  home.file = {
+
+    # haskell snippets
+    ".config/snips/haskell.snippets".text = ''
+      snippet lang "Language Pragma" b
+      {-# LANGUAGE $1 #-} $0
+      endsnippet
+
+      snippet reco "Record declaration" b
+      data $1 = $1
+        {$0}
+        deriving (Show, Eq)
+      endsnippet
+      '';
+
+    # ghci
+    ".ghci".text = ''
+      :set prompt "\ESC[1;35m%s\n\ESC[0;34mλ> \ESC[m"
+    '';
+
+    # coc.vim
+    ".config/nvim/coc-settings.json".text = ''
+      {
+       "languageserver": {
+          "haskell": {
+            "command": "haskell-language-server-wrapper",
+            "args": ["--lsp"],
+            "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+            "filetypes": ["haskell", "lhaskell"]
+          }
+        }
+      }
+    '';
   };
 
 }
