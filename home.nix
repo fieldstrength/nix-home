@@ -83,6 +83,7 @@
 
       ultisnips
       nerdtree
+      fzf-vim
 
       coc-nvim
       neuron-vim
