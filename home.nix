@@ -44,6 +44,7 @@
     enable = true;
     vimAlias = true;
     extraConfig = ''
+      """"""""""""" Styling """""""""""""
       " set background=light
       colorscheme PaperColor
 
@@ -55,8 +56,18 @@
       set number
       set relativenumber
 
+
       " Delete trailing whitespace on save
       autocmd BufWritePre * :%s/\s\+$//e
+
+
+      """"""""""""" Tabs & Buffers """""""""""""
+      nnoremap tn :tabnew<Space>
+      nnoremap tk :tabnext<CR>
+      nnoremap tj :tabprev<CR>
+      nnoremap th :tabfirst<CR>
+      nnoremap tl :tablast<CR>
+
 
       """"""""""""" latex config """""""""""""
       let g:tex_flavor='latex'
