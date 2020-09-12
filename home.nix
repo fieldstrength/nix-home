@@ -77,6 +77,9 @@
       " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
       nmap <silent> [[ <Plug>(coc-diagnostic-prev)
       nmap <silent> ]] <Plug>(coc-diagnostic-next)
+
+      """"""""""""" NERDTree config """""""""""""
+      map <C-n> :NERDTreeToggle<CR>
     '';
     plugins = with pkgs.vimPlugins; [
       gruvbox
