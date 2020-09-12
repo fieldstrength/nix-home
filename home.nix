@@ -48,7 +48,7 @@
       colorscheme PaperColor
 
       let g:airline_powerline_fonts = 1
-      let g:airline_theme = 'papercolor'
+      let g:airline_theme = 'kolor'
 
       let g:netrw_liststyle=3
 
