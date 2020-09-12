@@ -72,6 +72,11 @@
 
       let g:UltiSnipsSnippetDirectories=['~/.config/snips']
 
+
+      """"""""""""" Conquer of Completion config """""""""""""
+      " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+      nmap <silent> [[ <Plug>(coc-diagnostic-prev)
+      nmap <silent> ]] <Plug>(coc-diagnostic-next)
     '';
     plugins = with pkgs.vimPlugins; [
       gruvbox
