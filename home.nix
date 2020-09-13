@@ -93,9 +93,9 @@
       map <C-n> :NERDTreeToggle<CR>
     '';
     plugins = with pkgs.vimPlugins; [
-      gruvbox
-      zenburn
-      papercolor-theme
+      vim-colorschemes
+      awesome-vim-colorschemes
+      vim-colorstepper
 
       vim-airline
       vim-airline-themes
