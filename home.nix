@@ -46,7 +46,7 @@
     extraConfig = ''
       """"""""""""" Styling """""""""""""
       " set background=light
-      colorscheme PaperColor
+      colorscheme 1989
 
       let g:airline_powerline_fonts = 1
       let g:airline_theme = 'kolor'
