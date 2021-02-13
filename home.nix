@@ -60,6 +60,7 @@
 
   programs.git = {
     enable = true;
+    userName = "Cliff Harvey";
     userEmail = "cs.hbar@gmail.com";
 
     # signing = {
