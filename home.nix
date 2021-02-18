@@ -172,7 +172,8 @@
       nnoremap <Leader>P "*P
 
       " fuzzy search
-      nnoremap <space><space> :GFiles --other<CR>
+      nnoremap <space><space> :Files<CR>
+      let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
       " save file
       nnoremap zz :w<CR>
