@@ -40,6 +40,13 @@
 {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  programs.zsh = {
+    enable = true;
+    oh-my-zsh = {
+      enable = true;
+      theme = "eastwood";
+    };
+  };
 
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
