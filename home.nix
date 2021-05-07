@@ -168,8 +168,11 @@
       """"""""""""" Mappings """""""""""""
       " easy access to system register
       nnoremap <Leader>y "*y
+      vnoremap <Leader>y "*y
       nnoremap <Leader>p "*p
+      vnoremap <Leader>p "*p
       nnoremap <Leader>P "*P
+      vnoremap <Leader>P "*P
 
       " fuzzy search
       nnoremap <space><space> :Files<CR>
