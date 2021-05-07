@@ -163,6 +163,7 @@
       let g:netrw_liststyle=3
 
       set number
+      set mouse=nicr
 
       " Delete trailing whitespace on save
       autocmd BufWritePre * :%s/\s\+$//e
