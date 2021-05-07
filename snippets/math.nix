@@ -76,22 +76,47 @@ snippet /over "Overtext" iA
 \\overtext{$1}{$2} $0
 endsnippet
 
+snippet /dd "partial derivative" iA
+\\partial$0
+endsnippet
+
 
 
 snippet /ket "ket" iA
-\\left \\lvert $1 \\right \\rangle$0
+\\lvert $1 \\rangle$0
 endsnippet
 
 snippet /bra "bra" iA
-\\left \\langle $1 \\right \\rvert$0
+\\langle $1 \\rvert$0
 endsnippet
 
 snippet /xpect "expectation value" iA
-\\left \\langle $1 \vert $2 \vert $1 \\right \\rvert$0
+\\langle $1 \vert $2 \vert $1 \\rangle$0
 endsnippet
 
 snippet /inner "inner product" iA
-\\left \\langle $1 \vert $2 \\right \\rvert$0
+\\langle $1 \vert $2 \\rangle $0
+endsnippet
+
+snippet /ev "expectation value with implicit states" iA
+\\langle $1 \\rangle$0
+endsnippet
+
+
+
+snippet /pmat "matrix" iA
+\\begin\{pmatrix\}
+$1 \\\\ $2
+\\end\{pmatrix\}
+endsnippet
+
+
+snippet /box "boxed equation" iA
+\$\$
+\\bbox[8px,border:2px solid #DAB5E5]\{
+$1
+\}
+\$\$
 endsnippet
 
 
@@ -120,4 +145,8 @@ snippet /b{ "Big open curly brace" iA
 \\bigg\\\{ $1 \\bigg\\\}$0
 endsnippet
 
+
+snippet /| "Open absolute value" iA
+\\Big | $1 \\Big|$0
+endsnippet
 ''
