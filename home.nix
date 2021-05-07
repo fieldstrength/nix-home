@@ -142,6 +142,9 @@
       # Sometimes this setting helps, sometimes not.
       # Unfortunately I cant enable only the scroll-wheel instead of all mouse events
       set-option -g mouse on
+
+      # Ease config reload
+      bind r source-file ~/.tmux.conf
     '';
   };
 
