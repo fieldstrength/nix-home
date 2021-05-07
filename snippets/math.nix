@@ -46,6 +46,10 @@ snippet /int "Integral" iA
 \\int_{$1}^{$2} $0
 endsnippet
 
+snippet /sum "Sum" iA
+\\sum_{$1}^{$2} $0
+endsnippet
+
 snippet /inf "Infinity" iA
 \\infty$0
 endsnippet
