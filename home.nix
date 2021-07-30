@@ -177,6 +177,9 @@
       vnoremap <Leader>p "*p
       nnoremap <Leader>P "*P
       vnoremap <Leader>P "*P
+      nnoremap <Leader>d "*d
+      vnoremap <Leader>d "*d
+
 
       " fuzzy search
       nnoremap <space><space> :Files<CR>
@@ -210,6 +213,7 @@
 
 
       """"""""""""" Table alignment """""""""""""
+      " https://github.com/junegunn/vim-easy-align
       au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
 
 
