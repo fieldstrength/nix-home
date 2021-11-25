@@ -28,6 +28,14 @@ endsnippet
 
 snippet /thm "Theorem" bA
 __Theorem.__ $0
+
+_Proof:_ [[prove-me]].
+endsnippet
+
+snippet /lem "Lemma" bA
+__Lemma.__ $0
+
+_Proof:_ [[prove-me]].
 endsnippet
 
 snippet /bi "Bold_italic" A
