@@ -268,6 +268,7 @@
       vim-markdown
       idris-vim
       vim-easy-align
+      lean-vim
     ];
   };
 
