@@ -254,6 +254,8 @@
       vim-airline-themes
 
       ultisnips
+      auto-pairs
+
       nerdtree
       fzf-vim
 
