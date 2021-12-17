@@ -15,9 +15,6 @@
         tealdeer
         tree
         zathura
-        (let neuronRev = "96e994327e830068f995c31f2bb59e66c89e5665";
-             neuronSrc = builtins.fetchTarball "https://github.com/srid/neuron/archive/${neuronRev}.tar.gz";
-        in import neuronSrc {})
       ];
 
       workPackages = with pkgs; [
