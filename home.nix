@@ -251,7 +251,7 @@
       vim-airline-themes
 
       ultisnips
-      auto-pairs
+      # auto-pairs
 
       nerdtree
       fzf-vim
