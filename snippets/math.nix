@@ -26,11 +26,11 @@ snippet /scr "Script text" iA
 endsnippet
 
 
-snippet // "Fraction" iA
+snippet /// "Fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
 
-snippet t// "Tiny fraction" iA
+snippet //t "Tiny fraction" iA
 \\tfrac{$1}{$2}$0
 endsnippet
 
