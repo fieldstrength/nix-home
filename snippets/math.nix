@@ -1,6 +1,5 @@
 ''
 
-
 snippet /rm "Normal text" iA
 \\mathrm{$1}$0
 endsnippet
@@ -120,6 +119,21 @@ $1
 endsnippet
 
 
+snippet ( "Cheeky open parentheses" iA
+($1)$0
+endsnippet
+
+snippet [ "Cheeky open bracket" iA
+[$1]$0
+endsnippet
+
+snippet { "Cheeky open brace" iA
+\{$1\}$0
+endsnippet
+
+
+# Raise priority to prevent issues with cheeky parentheses
+priority 1
 
 snippet /( "Open parentheses" iA
 \\Big( $1 \\Big)$0
@@ -149,4 +163,5 @@ endsnippet
 snippet /| "Open absolute value" iA
 \\Big | $1 \\Big|$0
 endsnippet
+
 ''
