@@ -21,7 +21,7 @@ snippet /frak "Fraktur text" iA
 endsnippet
 
 snippet /scr "Script text" iA
-\\mathbb{$1}$0
+\\mathscr{$1}$0
 endsnippet
 
 
