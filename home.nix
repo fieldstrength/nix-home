@@ -142,7 +142,7 @@
       set-option -g mouse on
 
       # Ease config reload
-      bind r source-file ~/.tmux.conf
+      bind r source-file ~/.config/tmux/tmux.conf
     '';
   };
 
