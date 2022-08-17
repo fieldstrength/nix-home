@@ -187,6 +187,14 @@
       nnoremap zz :w<CR>
 
 
+      """"""""""""" Visual mode bracket helpers """""""""""""
+      " Press the corresponding opener to surround selected text
+      "   Note: `[ means go to start of last text changed
+      xnoremap { xi{}<Left><Esc>p`[v`]
+      xnoremap [ xi[]<Left><Esc>p`[v`]
+      xnoremap ( xi()<Left><Esc>p`[v`]
+
+
       """"""""""""" Indentation """""""""""""
       set expandtab
       set tabstop=2
