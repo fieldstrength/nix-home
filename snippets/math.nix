@@ -61,6 +61,10 @@ snippet /sq "Square-root" iA
 \\sqrt{$1}$0
 endsnippet
 
+snippet /vec "Vector 3D" iA
+\\vec{$1}$0
+endsnippet
+
 snippet /mat "Matrix" iA
 \begin{matrix}
 $1
@@ -79,6 +83,17 @@ snippet /dd "partial derivative" iA
 \\partial$0
 endsnippet
 
+snippet //p "partial derivative fraction" iA
+\\frac{\\partial $1}{\\partial $2} $0
+endsnippet
+
+snippet //d "ordinary derivative fraction" iA
+\\frac{\\partial $1}{\\partial $2} $0
+endsnippet
+
+snippet /del "Nabla" iA
+\\nabla$0
+endsnippet
 
 
 snippet /ket "ket" iA
