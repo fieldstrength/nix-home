@@ -88,7 +88,7 @@ snippet //p "partial derivative fraction" iA
 endsnippet
 
 snippet //d "ordinary derivative fraction" iA
-\\frac{\\partial $1}{\\partial $2} $0
+\\frac{d $1}{d $2} $0
 endsnippet
 
 snippet /del "Nabla" iA

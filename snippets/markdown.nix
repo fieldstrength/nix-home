@@ -13,6 +13,10 @@ snippet /m "Inline MathJax" A
 \$$1\$ $0
 endsnippet
 
+snippet xx "Inline MathJax alternate" A
+\$$1\$ $0
+endsnippet
+
 snippet mal "Aligned Equations" b
 \$\$
 \\begin{aligned}
